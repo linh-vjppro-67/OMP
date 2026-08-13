@@ -558,9 +558,32 @@ html,body{min-height:100%;overflow-x:hidden}.side{height:100vh;min-height:0;over
   .login-brand{height:82px}.login-brand img:first-child{height:82px}.login-brand img:last-child{height:74px}
   .hero h1{margin-top:16px}
   .benefits{top:auto;bottom:38px;gap:18px 48px}
-  .login-side form{top:clamp(120px,20vh,196px)}
-  .login-side{padding-top:55px;padding-bottom:55px}
-  .language{top:26px}
+  .login-side{padding:55px 48px}
+  .login-side form{left:50%;top:clamp(120px,20vh,196px);width:calc(100% - 96px);max-width:453px;transform:translateX(-50%)}
+  .login-side form>header,.login-side h2,.login-side form>header p,.login-side .ms,.login-side .or,.login-side .login-fields,.login-side .field,.login-side .field>div,.login-side .remember,.login-side .submit{width:100%}
+  .language{left:auto;right:48px;top:26px}
   .login-side>footer{top:auto;bottom:18px}
   .or{height:54px}.field{margin-bottom:15px}.submit{margin-top:15px}
+}
+
+/* Component-level responsiveness: react to the usable content width after the sidebar. */
+.project-detail-main,.dashboard-main{container-type:inline-size}
+.activity-status,.project-status,.building-status{white-space:nowrap}
+@container (max-width:1100px){
+  .project-detail-grid{grid-template-columns:1fr!important}
+  .general-info,.investor-info,.activity-card,.summary-card,.contacts-card{height:auto!important;min-height:0}
+  .detail-fields,.investor-fields,.bank-fields{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+  .detail-fields>div:nth-child(2),.investor-fields>div:nth-child(2){grid-column:span 1!important}
+  .detail-card{overflow:visible}
+  .activity-card{overflow:hidden!important}
+  .activity-card .activity-table{display:table;width:820px;min-width:820px;margin-right:20px}
+  .activity-card{overflow-x:auto!important}
+  .activity-card>a{position:sticky;left:0;width:max-content;white-space:nowrap}
+  .stats:not(.six){height:auto!important;grid-template-columns:repeat(3,minmax(0,1fr))!important}
+  .stat{width:auto!important;height:auto!important;min-height:128px;overflow:visible}
+  .stat small{white-space:normal;line-height:18px}
+}
+@container (max-width:700px){
+  .detail-fields,.investor-fields,.bank-fields{grid-template-columns:1fr!important}
+  .stats:not(.six){grid-template-columns:1fr!important}
 }
