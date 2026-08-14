@@ -13,7 +13,7 @@
 
 .side small{height:31px;padding:12px 20px 0;border-top:1px solid #334759;font:400 12px/15px Inter;color:#8290a1}
 .nav{font:500 14px/17px Inter}.nav.on{font-weight:700}.nav i{font-size:12px;color:#bdc9d7}
-.project-subnav{height:108px;padding:0 0 0 50px;background:#02284c;display:flex;flex-direction:column}
+.project-subnav{height:144px;padding:0 0 0 50px;background:#02284c;display:flex;flex-direction:column}
 .field-caption{display:inline-flex!important;align-items:center;gap:3px;width:max-content;max-width:100%}.field-caption em{display:inline!important;flex:none}.address-label,.investor-address{display:block!important}.address-label>em,.investor-address>em{display:inline!important}.address-label>span:not(.field-caption),.investor-address>span:not(.field-caption){margin-top:8px}
 @media(min-width:1101px){.main.import-main:has(.create-project-page){width:100%!important;max-width:none!important}.create-project-page,.create-project-page>header,.create-project-page .create-card{width:100%!important;max-width:none}.create-project-page>header{padding-right:0}}
 @media(min-width:1101px){.building-main{width:100%!important;max-width:none}.building-main .page-head,.building-main .building-filters,.building-main .building-table{width:100%!important}.building-main .building-filters{display:grid;grid-template-columns:minmax(190px,1.2fr) repeat(3,minmax(160px,1fr));gap:16px}.building-main .building-filters label,.building-main .building-filters button,.building-main .building-filters button:nth-of-type(1),.building-main .building-filters button:nth-of-type(2),.building-main .building-filters button:nth-of-type(3){width:100%;min-width:0}.building-main .building-table table{width:100%;min-width:1250px}}
